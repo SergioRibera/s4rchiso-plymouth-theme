@@ -12,7 +12,8 @@ It is a simple plymouth theme with shell scripts to install, test and eventualy 
     - `makepkg -si`
 
 ### Boot up splash screen
-[Boot Image](https://i.imgur.com/5edVsfo.gifv)
+![Boot Image](https://user-images.githubusercontent.com/56278796/115982056-405cc180-a566-11eb-936e-eee9995c7a91.gif)
+
 
 # Installation
 * go to the downloaded `s4rchiso-plymouth-theme` folder from terminal, it can be done with the following command
