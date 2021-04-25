@@ -1,0 +1,46 @@
+Window.SetBackgroundTopColor (0, 0, 0);           
+Window.SetBackgroundBottomColor (0, 0, 0);      
+bg_image = Image ("bg.png");
+bg_image = bg_image.Scale (Window.GetWidth(), Window.GetHeight());
+bg =  Sprite (bg_image);
+bg.SetZ (-10);
+
+
+yPos = 0.8;
+s = 0.3;
+sName = 1.7;
+
+name_image = Image ("name.png");
+name_image = name_image.Scale (250 * sName, 120 * sName);
+name = Sprite (name_image);
+name.SetX (Window.GetWidth ()  / 2 - name_image.GetWidth()  / 2);
+name.SetY ((Window.GetHeight() * yPos) - name_image.GetHeight() / 2);
+
+#ic1 = Image ("1.png");
+#ic1 = ic1.Scale (ic1.GetWidth() * s ,ic1.GetHeight() * s );
+#c1 = Sprite (ic1);
+#c1.SetX (Window.GetWidth ()  / 2 - ic1.GetWidth()  / 2);
+#c1.SetY ((Window.GetHeight() * yPos) - ic1.GetHeight() / 2);
+
+
+for (i = 1; i < 35; i++) {
+    imageI = Image("s4rchiso-" + i + ".png");
+    imageI = imageI.Scale(imageI.GetWidth() * s, imageI.GetHeight() * s);
+    flyingman_image[i] = imageI;
+}
+flyingman_sprite = Sprite(flyingman_image[0]);
+
+# set image position
+#flyingman_sprite.SetX(Window.GetWidth() / 2 - 857 / s);
+#flyingman_sprite.SetY((Window.GetHeight() * yPos) - flyingman_image[0].GetHeight() / s);
+flyingman_sprite.SetX((Window.GetWidth() / 2) - (428.5 * s));
+flyingman_sprite.SetY((Window.GetHeight() * yPos) - (326.5 * yPos + 40));
+
+
+progress = 0;
+fun update ()
+{
+    flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 2) % 34]);
+    progress++;
+}
+Plymouth.SetRefreshFunction (update);

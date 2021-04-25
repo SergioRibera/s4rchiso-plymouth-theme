@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=S4rcISO Boot
+Description=Boot Animation for Archiso
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/s4rchiso
+ScriptFile=/usr/share/plymouth/themes/s4rchiso/s4rchiso.script
+UseFirmwareBackground=false
