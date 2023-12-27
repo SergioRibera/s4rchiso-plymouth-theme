@@ -1,12 +1,12 @@
 [Plymouth Theme]
-Name=logo-mac-style
+Name=mac-style
 Description=Boot animation with your own Logo, inspired by the Boot animation of macOS.
 ModuleName=two-step
 
 [two-step]
 Font=Cantarell 10
 TitleFont=Cantarell Light 25
-ImageDir=/etc/plymouth/themes/logo-mac-style/images
+ImageDir=/etc/plymouth/themes/mac-style/images
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.5
 TitleHorizontalAlignment=.5
