@@ -11,10 +11,6 @@ It is a simple plymouth theme with shell scripts to install, test and eventualy 
     - `cd plymouth`
     - `makepkg -si`
 
-### Boot up splash screen
-![Boot Image](https://user-images.githubusercontent.com/56278796/115982056-405cc180-a566-11eb-936e-eee9995c7a91.gif)
-
-
 # Installation
 * go to the downloaded `s4rchiso-plymouth-theme` folder from terminal, it can be done with the following command
 ```
@@ -69,33 +65,9 @@ sudo ./uninstall
 
 
 
-# Customizing background color
-
-* open the file in `s4rchiso/bg.png` in any image editor of your choice
-
-* fill the image with the color you want as background
-
-* save changes ensuring to NOT change neither the file name `bg.png` neither his location `s4rchiso`
-
-* proceed to installation/reinstallation
-
-
-
-
-# Customizing background image
-
-* rename, remove or move to a different folder the file in `s4rchiso/bg.png`
-
-* put your custom background image IN PNG FORMAT inside the `s4rchiso` folder
-
-* rename your custom beckground image as `bg.png`
-
-* proceed to installation/reinstallation
-
 ## License
 
 This project is licensed under the GPL v.2 License - see the LICENSE.md file for details
 
 ## Acknowledgments
-Inspiration, code snippets, etc.
-* [Inspiration for estetic &amp; style](https://atom.io/)
+* [Based on MacOs style](https://www.gnome-look.org/p/2112595)

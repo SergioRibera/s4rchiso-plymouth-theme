@@ -14,21 +14,22 @@ fi
 
 # coping theme in /usr/share/plymouth/themes/
 echo -n "coping theme in /usr/share/plymouth/themes/   ..................   " ;
-cp -r `dirname $0`/s4rchiso /usr/share/plymouth/themes/ ;
+mkdir -p /usr/share/plymouth/themes/logo-mac-style
+cp -r `dirname $0` /usr/share/plymouth/themes/logo-mac-style ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occoured in moving `dirname $0`/s4rchiso to /usr/share/plymouth/themes/" ;
+	echo -e "\nan error occoured in moving `dirname $0` to /usr/share/plymouth/themes/" ;
 	exit 1;
 fi
 echo "[done]" ;
 
 echo -n "setting s4rchiso as default plymouth theme   ..............   " ;
-sudo plymouth-set-default-theme -R s4rchiso
+sudo plymouth-set-default-theme -R logo-mac-style
 if [ $? -gt 0 ]; then
 	echo -e "\nan error occoured setting alternative in /usr/share/plymouth/themes/default.plymouth";
 	exit 1;
 fi
 echo "[done]" ;
 
-echo "s4rchiso is your plymouth theme now :)" ;
+echo "logo-mac-style is your plymouth theme now :)" ;
 
 exit 0;

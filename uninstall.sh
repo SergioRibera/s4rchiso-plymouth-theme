@@ -9,11 +9,11 @@ fi
 
 
 # check if plymouth themes directory exist
-if [ -d "/usr/share/plymouth/themes/s4rchiso" ]; then
-	echo -n "removing /usr/share/plymouth/themes/s4rchiso   ............   " ;
-	rm -r /usr/share/plymouth/themes/s4rchiso ;
+if [ -d "/usr/share/plymouth/themes/logo-mac-style" ]; then
+	echo -n "removing /usr/share/plymouth/themes/logo-mac-style............   " ;
+	rm -r /usr/share/plymouth/themes/logo-mac-style;
 	if [ $? -gt 0 ]; then
-		echo -e "\nan error occoured removing /usr/share/plymouth/themes/s4rchiso" ;
+		echo -e "\nan error occoured removing /usr/share/plymouth/themes/logo-mac-style" ;
 		exit 1;
 	fi
 	echo "[done]" ;
