@@ -7,17 +7,17 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # check if plymouth themes directory exist
-if [ ! -d "/usr/share/plymouth/themes" ]; then
-	echo -e "\"/usr/share/plymouth/themes\" directory dose not exist, are you sure plymouth is installed and up to date?";
+if [ ! -d "/etc/plymouth/themes" ]; then
+	echo -e "\"/etc/plymouth/themes\" directory dose not exist, are you sure plymouth is installed and up to date?";
 	exit 1;
 fi
 
-# coping theme in /usr/share/plymouth/themes/
-echo -n "coping theme in /usr/share/plymouth/themes/   ..................   " ;
-mkdir -p /usr/share/plymouth/themes/logo-mac-style
-cp -r `dirname $0` /usr/share/plymouth/themes/logo-mac-style ;
+# coping theme in /etc/plymouth/themes/
+echo -n "coping theme in /etc/plymouth/themes/   ..................   " ;
+mkdir -p /etc/plymouth/themes/logo-mac-style
+cp -r `dirname $0` /etc/plymouth/themes/logo-mac-style ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occoured in moving `dirname $0` to /usr/share/plymouth/themes/" ;
+	echo -e "\nan error occoured in moving `dirname $0` to /etc/plymouth/themes/" ;
 	exit 1;
 fi
 echo "[done]" ;
@@ -25,7 +25,7 @@ echo "[done]" ;
 echo -n "setting s4rchiso as default plymouth theme   ..............   " ;
 sudo plymouth-set-default-theme -R logo-mac-style
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occoured setting alternative in /usr/share/plymouth/themes/default.plymouth";
+	echo -e "\nan error occoured setting alternative in /etc/plymouth/themes/default.plymouth";
 	exit 1;
 fi
 echo "[done]" ;

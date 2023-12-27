@@ -6,7 +6,7 @@ ModuleName=two-step
 [two-step]
 Font=Cantarell 10
 TitleFont=Cantarell Light 25
-ImageDir=/usr/share/plymouth/themes/logo-mac-style/images
+ImageDir=/etc/plymouth/themes/logo-mac-style/images
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.5
 TitleHorizontalAlignment=.5
