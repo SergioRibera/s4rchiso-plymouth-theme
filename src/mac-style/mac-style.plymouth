@@ -4,8 +4,8 @@ Description=Boot animation with your own Logo, inspired by the Boot animation of
 ModuleName=two-step
 
 [two-step]
-Font=Cantarell 10
-TitleFont=Cantarell Light 25
+Font=Liberation Mono 10
+TitleFont=Liberation Mono 25
 ImageDir=/etc/plymouth/themes/mac-style/images
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.5
