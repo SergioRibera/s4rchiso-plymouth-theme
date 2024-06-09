@@ -92,9 +92,6 @@ sudo ./uninstall
 
 * proceed to installation/reinstallation
 
-## License
-
-This project is licensed under the GPL v.2 License - see the LICENSE.md file for details
 
 ## Acknowledgments
 Inspiration, code snippets, etc.
